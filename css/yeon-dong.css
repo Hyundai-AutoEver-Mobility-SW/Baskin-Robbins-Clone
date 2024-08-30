@@ -127,3 +127,8 @@ h1 .logo {
     color: white;
     transition: 0.3s;
 }
+
+.hd.hover .menu .menu-item a:hover {
+    color: black;
+    transition: 0.3s;
+}
