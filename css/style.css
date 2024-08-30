@@ -10,19 +10,52 @@
     --gray-color-1: #d4d4d4;
     --swiper-theme-color: #007aff;
 }
-.container{
-    width: 1594px;
-    margin : 0 auto;
-    position: relative;
-}
 
 /* header */
+.hd{
+    background-color: red;
+    height: 90px;
+}
 
 
-/* visual */
+/* banner */
+.banner{
+    background-color: pink;
+    height: 910px;
+}
 
-
-/* sec1st */
-
-
+/* promotion */
+.promotion{
+    background-color: white;
+    height: 860.28px;
+}
+/* new-item */
+.new-item{
+    background-color: pink;
+    height: 949.09px;
+}
+/* br-play */
+.br-play{
+    background-color: white;
+    height: 949.09px;
+}
+/* be-better */
+.be-better{
+    background-color: pink;
+    height: 960.48px;
+}
+/* benefit */
+.benefit{
+    background-color: white;
+    height: 960.48px;
+}
+/* map */
+.map{
+    background-color: pink;
+    height: 645px;
+}
 /* footer */
+.ft{
+    background-color: black;
+    height: 593.17px;
+}
