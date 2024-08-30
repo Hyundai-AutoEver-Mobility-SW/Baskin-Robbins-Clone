@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
 :root{
-    --main-color-1: #eee;
-}
-.container{
-    width: 1920px;
-    margin : 0 auto;
-    position: relative;
+    --pink-color-1: #ffb3c3;
+    --pink-color-2: #ff4d72;
+    --pink-color-3: #ff7c98;
+    --brown-color-1: #41332c;
+    --brown-color-2: #2f231c;
+    --brown-color-3: #948780;
+    --gray-color-1: #d4d4d4;
+    --swiper-theme-color: #007aff;
 }
 
 /* header */
