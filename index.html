@@ -1,46 +1,78 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>배스킨라빈스</title>
-    <!-- 부트스트랩 css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-  </head>
 
-  <body>
-    <header class="hd"></header>
-    <div class="banner"></div>
-    <div class="container promotion"></div>
-    <div class="container new-item"></div>
-    <div class="container br-play"></div>
-    <div class="container be-better"></div>
-    <div class="container benefit"></div>
-    <div class="container map"></div>
-    <footer class="ft"></footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배스킨라빈스</title>
+  <!-- 부트스트랩 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Noto Sans Korean -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="./css/yeon-dong.css">
+</head>
 
-    <script></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
-      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-  </body>
+<body>
+  <div class="background-image"></div>
+  <header class="hd fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="left-wrap d-flex">
+        <h1>
+          <div class="logo"></div>
+        </h1>
+        <ul class="menu d-flex justify-content-center align-items-center">
+          <li class="menu-item"><a href="#!">Menu</a></li>
+          <li class="menu-item"><a href="#!">BR Play</a></li>
+          <li class="menu-item"><a href="#!">BR Story</a></li>
+          <li class="menu-item"><a href="#!">Delivery/Store</a></li>
+        </ul>
+      </div>
+      <div class="right-wrap d-flex justify-content-center align-items-center">
+        <div class="search d-flex justify-content-end">
+          <div class="search-img"></div>
+        </div>
+        <div class="user-icon"></div>
+      </div>
+    </div>
+  </header>
+  <div class="banner">
+
+  </div>
+  <div class="container promotion"></div>
+  <div class="container new-item"></div>
+  <div class="container br-play"></div>
+  <div class="container be-better"></div>
+  <div class="container benefit"></div>
+  <div class="container map"></div>
+  <footer class="ft"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+    integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(window).scroll(function () {
+      let scroll = $(window).scrollTop()
+      console.log(scroll);
+      if (scroll < 100) {
+        $(".hd").removeClass("hover");
+      } else {
+        $(".hd").addClass("hover");
+      }
+    })
+  </script>
+</body>
+
 </html>

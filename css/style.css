@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-:root{
+:root {
     --main-color-1: #eee;
-    --font-family-ko: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    --font-family-en: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
-    --font-family-scoop: "Scoop", Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     --font-weight-sd-regular: 400;
     --font-weight-sd-medium: 500;
     --font-weight-sd-semibold: 600;
@@ -22,50 +23,53 @@
 }
 
 /* header */
-.hd{
-    background-color: red;
-    height: 90px;
-}
+
 
 
 /* banner */
-.banner{
+.banner {
     background-color: pink;
     height: 910px;
 }
 
 /* promotion */
-.promotion{
+.promotion {
     background-color: white;
     height: 860.28px;
 }
+
 /* new-item */
-.new-item{
+.new-item {
     background-color: pink;
     height: 949.09px;
 }
+
 /* br-play */
-.br-play{
+.br-play {
     background-color: white;
     height: 949.09px;
 }
+
 /* be-better */
-.be-better{
+.be-better {
     background-color: pink;
     height: 960.48px;
 }
+
 /* benefit */
-.benefit{
+.benefit {
     background-color: white;
     height: 960.48px;
 }
+
 /* map */
-.map{
+.map {
     background-color: pink;
     height: 645px;
 }
+
 /* footer */
-.ft{
+.ft {
     background-color: black;
     height: 593.17px;
 }
