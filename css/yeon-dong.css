@@ -1,93 +1,129 @@
-.background-image{
+.background-image {
     height: 100vh;
     background: url("../image/bg_hero.jpg") repeat center;
 }
 
 
-.hd{
+.hd {
     height: 90px;
     width: 100%;
     transition: 0.3s;
 }
 
-h1 .logo{
+h1 .logo {
     width: 52px;
     height: 60px;
     margin: 15px auto;
     background: url("../image/h_logo.png");
 }
 
-.left-wrap .menu .menu-item{
+.left-wrap .menu .menu-item {
     padding: 10px;
     font-size: 13px;
     font-weight: 800;
 }
 
-.left-wrap h1{
+.left-wrap h1 {
     margin-right: 18px;
 }
 
-.right-wrap .search{
+.right-wrap .search {
     cursor: pointer;
     width: 186px;
     margin-right: 20px;
     border-bottom: 2px solid #e01682;
 }
 
-.right-wrap .search .search-img{
+.right-wrap .search .search-img {
     width: 27px;
     height: 27px;
     background: url("../image/btn_search.png") no-repeat;
 }
 
-.right-wrap .search .search-img{
+.right-wrap .search .search-img {
     width: 27px;
     height: 27px;
     background: url("../image/btn_search.png") no-repeat;
 }
 
-.right-wrap .user-icon{
+.right-wrap .user-icon {
     width: 36px;
     height: 32px;
     background: url("../image/btn_user_menu.png") no-repeat;
 }
 
-.hd:hover .logo{
+.hd:hover .logo {
     background: url("../image/h_logo_2.png");
     background-size: 52px 60px;
     transition: 0.3s;
 }
 
-.hd:hover{
+.hd:hover {
     background-color: #f986bd;
     transition: 0.3s;
 }
 
-.hd:hover .search{
+.hd:hover .search {
     border-color: white;
     transition: 0.3s;
 }
 
-.hd:hover .search .search-img{
+.hd:hover .search .search-img {
     width: 27px;
     height: 27px;
     background: url("../image/btn_search_white.png") no-repeat;
     transition: 0.3s;
 }
 
-.hd:hover .user-icon{
+.hd:hover .user-icon {
     width: 36px;
     height: 32px;
     background: url("../image/btn_user_menu_white.png") no-repeat;
     transition: 0.3s;
 }
 
-.hd:hover .menu .menu-item a{
+.hd:hover .menu .menu-item a {
     color: white;
     transition: 0.3s;
 }
 
-.hd .menu .menu-item a:hover{
+.hd .menu .menu-item a:hover {
     color: black;
+    transition: 0.3s;
+}
+
+/* 호버를 위한... */
+.hd.hover .logo {
+    background: url("../image/h_logo_2.png");
+    background-size: 52px 60px;
+    transition: 0.3s;
+}
+
+.hd.hover {
+    background-color: #f986bd;
+    transition: 0.3s;
+}
+
+.hd.hover .search {
+    border-color: white;
+    transition: 0.3s;
+}
+
+.hd.hover .search .search-img {
+    width: 27px;
+    height: 27px;
+    background: url("../image/btn_search_white.png") no-repeat;
+    transition: 0.3s;
+}
+
+.hd.hover .user-icon {
+    width: 36px;
+    height: 32px;
+    background: url("../image/btn_user_menu_white.png") no-repeat;
+    transition: 0.3s;
+}
+
+.hd.hover .menu .menu-item a {
+    color: white;
     transition: 0.3s;
 }

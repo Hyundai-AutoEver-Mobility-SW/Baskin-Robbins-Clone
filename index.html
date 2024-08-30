@@ -27,7 +27,9 @@
   <header class="hd fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="left-wrap d-flex">
-        <h1><div class="logo"></div></h1>
+        <h1>
+          <div class="logo"></div>
+        </h1>
         <ul class="menu d-flex justify-content-center align-items-center">
           <li class="menu-item"><a href="#!">Menu</a></li>
           <li class="menu-item"><a href="#!">BR Play</a></li>
@@ -43,7 +45,9 @@
       </div>
     </div>
   </header>
-  <div class="banner"></div>
+  <div class="banner">
+
+  </div>
   <div class="container promotion"></div>
   <div class="container new-item"></div>
   <div class="container br-play"></div>
@@ -52,20 +56,23 @@
   <div class="container map"></div>
   <footer class="ft"></footer>
 
-  <script>
-    // $(window).scroll(function () {
-    //   let scroll = $(window).scrollTop()
-    //   console.log(scroll);
-    //   if (scroll > 200) {
-    //     $(".hd").addClass("fixed-top")
-    //   } else {
-    //     $(".hd").removeClass("fixed-top")
-    //   }
-    // })
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
     integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $(window).scroll(function () {
+      let scroll = $(window).scrollTop()
+      console.log(scroll);
+      if (scroll < 100) {
+        $(".hd").removeClass("hover");
+      } else {
+        $(".hd").addClass("hover");
+      }
+    })
+  </script>
 </body>
 
 </html>
