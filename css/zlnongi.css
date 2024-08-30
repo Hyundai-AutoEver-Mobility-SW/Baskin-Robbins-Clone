@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root{
+    --main-color-1: #eee;
+    --font-family-ko: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-en: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-scoop: "Scoop", Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-weight-sd-regular: 400;
+    --font-weight-sd-medium: 500;
+    --font-weight-sd-semibold: 600;
+    --font-weight-sd-bold: 600;
+    --font-weight-sd-extrabold: 600;
+    --font-weight-sd-heavy: 700;
+    --pink-color-1: #ffb3c3;
+    --pink-color-2: #ff4d72;
+    --pink-color-3: #ff7c98;
+    --brown-color-1: #41332c;
+    --brown-color-2: #2f231c;
+    --brown-color-3: #948780;
+    --gray-color-1: #d4d4d4;
+    --swiper-theme-color: #007aff;
+}
+
+/* header */
+.hd{
+    background-color: red;
+    height: 90px;
+}
+
+
+/* banner */
+.banner{
+    background-color: pink;
+    height: 910px;
+}
+
+/* promotion */
+.promotion{
+    background-color: white;
+    height: 860.28px;
+}
+/* new-item */
+.new-item{
+    background-color: pink;
+    height: 949.09px;
+}
+/* br-play */
+.br-play{
+    background-color: white;
+    height: 949.09px;
+}
+/* be-better */
+.be-better{
+    background-color: pink;
+    height: 960.48px;
+}
+/* benefit */
+.benefit{
+    background-color: white;
+    /* height: 960.48px; */
+}
+
+.conTitle{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    color: var(--pink-color-2);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.miniContent {
+    font-size: 14px;
+}
+
+.benefit .item{
+    background-color: white;
+}
+
+/* map */
+.map{
+    background-color: pink;
+    height: 645px;
+}
+/* footer */
+.ft{
+    background-color: black;
+    height: 593.17px;
+}
