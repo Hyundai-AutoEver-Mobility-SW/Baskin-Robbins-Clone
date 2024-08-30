@@ -2,6 +2,15 @@
 
 :root{
     --main-color-1: #eee;
+    --font-family-ko: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-en: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-scoop: "Scoop", Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-weight-sd-regular: 400;
+    --font-weight-sd-medium: 500;
+    --font-weight-sd-semibold: 600;
+    --font-weight-sd-bold: 600;
+    --font-weight-sd-extrabold: 600;
+    --font-weight-sd-heavy: 700;
 }
 .container{
     width: 1300px;
