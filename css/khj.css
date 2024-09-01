@@ -21,6 +21,35 @@
     --gray-color-1: #d4d4d4;
     --swiper-theme-color: #007aff;
 }
+/* common */
+.text-wrap-pink {
+    height: 86px;
+    margin: 0 auto;
+}
+
+.text-wrap-pink h1 {
+    font-family: 'Nerko One', cursive;
+    font-size: 60px;
+    color: var(--pink-color-2);
+}
+
+.text-wrap-pink p {
+    font-size: 13px;
+    color: #777;
+}
+.img-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
 /* header */
 .hd {
     background-color: red;
@@ -38,32 +67,119 @@
     background-color: white;
     height: 860.28px;
 }
+/* ---------------------------------- swiper */
 
-/* new-item */
+.swiper-slide {
+    flex-shrink: 0; /* 슬라이드가 줄어들지 않도록 설정 */
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+
+}
+.swiper{
+    position: relative;
+}
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    bottom: -100px;
+    width: 100%;
+}
+/* 커스텀 페이지네이션 불릿 */
+.swiper-pagination-bullet {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin: 0 20px; /* 불릿 사이의 간격 */
+    background: transparent;
+    border-radius: 100%;
+}
+
+.swiper-pagination-bullet:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+    border-radius: 100%;
+    content: "";
+    background: #EEC5D0;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active:before {
+    top: -9px;/* 활성화된 불릿이 커지면서 위치를 조정 */
+    left: -6.5px;/* 활성화된 불릿이 커지면서 위치를 조정 */
+    width: 27px;
+    height: 32px;
+    margin: 0;
+    border-radius: 0;
+    background: url("../img/icon_bullet_active.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* ---------------------------------- new-item */
 .new-item {
-    background-color: var(--pink-color-1);
+    background-color: #FFE4EA;
     height: 949.09px;
 }
-.text-wrap-pink{
-    height: 86px;
-    margin : 0 auto;
-}
-.text-wrap-pink h1{
-    font-family: 'Nerko One', cursive;
-    font-size: 40px;
-    color : var(--pink-color-2);
-}
-.text-wrap-pink p{
-    font-size : 9px;
-    color : #777;
-}
-.item-container{
+.new-item .item-container{
     height: 563px;
-    background-color: white;
-    border-radius : 15px;
+    /* border-radius : 15px; */
 }
 
-/* br-play */
+.new-item .item-container .left-col{
+    border-radius: 15px;
+    position: relative;
+}
+
+    
+.new-item .item-container .right-col {
+    border-radius: 15px;
+    display : flex;
+    flex-direction: column;
+}
+.new-item .item-container .right-col .row-1,
+.new-item .item-container .right-col .row-2 {
+    display: flex;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    /* 비율로 안됨? */
+    height: 285px; 
+    position: relative;
+}
+.new-item .item-container .text{
+    position: absolute;
+    color : #E77E32;
+    left: 50%;
+    top: 0%;
+    margin: 30px;
+    font-weight: 700;
+    font-size : 15px;
+}
+.new-item .item-container .arrow-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #E77E32;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------- br-play */
 .br-play {
     background-color: gray;
     height: 949.09px;

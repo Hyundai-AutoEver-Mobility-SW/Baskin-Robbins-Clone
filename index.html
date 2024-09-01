@@ -12,6 +12,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- swiper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -20,17 +27,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/khj.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
     <link rel="stylesheet" href="/css/reset.css" />
-    <!-- khj fonts -->
+    <link rel="stylesheet" href="/css/khj.css" />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
       rel="stylesheet"
     />
-    <!-- notosans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,15 +49,133 @@
     <div class="banner"></div>
     <div class="container promotion"></div> -->
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new item -->
-    <!-- <div class="new-item p-5">
+    <div class="new-item p-5">
       <div class="text-wrap-pink text-center mb-5">
         <h1 class="mb-1">NEW ITEM</h1>
         <p class="">새로 나온 배라의 신제품을 소개합니다</p>
       </div>
-      <div class="container">
-        <div class="item-container"></div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- 첫번째 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="item-container row">
+                <div class="left-col col-md-4">
+                  <div class="img-container">
+                    <img src="./img/item1-main.png" alt="" />
+                  </div>
+                </div>
+                <div class="right-col col-md-4">
+                  <div class="col">
+                    <div class="row-1">
+                      <div class="img-container">
+                        <img src="./img/item1-1.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 요거팡</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row-2">
+                      <div class="img-container">
+                        <img src="./img/item1-3.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 PANG! <br />에이드</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-col col-md-4">
+                  <div class="col">
+                    <div class="row-1">
+                      <div class="img-container">
+                        <img src="./img/item1-2.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 요거팡</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row-2">
+                      <div class="img-container">
+                        <img src="./img/item1-4.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 PANG! <br />에이드</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 두번째 슬라이드 -->
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="item-container row">
+                <div class="left-col col-md-4">
+                  <div class="img-container">
+                    <img src="./img/item1-main.png" alt="" />
+                  </div>
+                </div>
+                <div class="right-col col-md-4">
+                  <div class="col">
+                    <div class="row-1">
+                      <div class="img-container">
+                        <img src="./img/item1-1.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 요거팡</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row-2">
+                      <div class="img-container">
+                        <img src="./img/item1-3.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 PANG! <br />에이드</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-col col-md-4">
+                  <div class="col">
+                    <div class="row-1">
+                      <div class="img-container">
+                        <img src="./img/item1-2.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 요거팡</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="row-2">
+                      <div class="img-container">
+                        <img src="./img/item1-4.png" alt="" />
+                      </div>
+                      <div class="text">피치망고 PANG! <br />에이드</div>
+                      <div class="arrow-btn">
+                        <img src="./img/icon_new_button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 페이지네이션 추가 -->
+        <div class="swiper-pagination">123</div>
+        <!-- 내비게이션 추가 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </div> -->
+    </div>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ br-play -->
     <!-- <div class="container br-play">
       <div class="text-wrap text-center">
@@ -82,22 +205,44 @@
         </div>
       </div>
     </div> -->
-    <div class="container be-better">
+    <!-- <div class="container be-better">
       <div class="text-wrap-pink text-center">
         <h1 class="mb-1 title">Be Better</h1>
-        <p class="desc">배라가 사회와 함께 하는 방법, 가치 있는 같잉</p>
+        <p class="desc">배라가 사회와 함께 하는 방법, 가치 있는 같ㅣ</p>
       </div>
-    </div>
+    </div> -->
     <div class="container benefit"></div>
     <div class="container map"></div>
     <footer class="ft"></footer>
 
     <script></script>
+    <!-- bootstrap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
       integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- swiper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
+      integrity="sha512-hRhHH3+D9xVKPpodEiYzHWIG8CWbCjp7LCdZ00K3/6xsdC3iT0OlPJLIwxSMEl07gya1Ae8iAqXjMMLpzqqh0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
