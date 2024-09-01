@@ -182,16 +182,16 @@
 /* ---------------------------------- br-play */
 .br-play {
     background-color: gray;
-    height: 949.09px;
+    background-image: url("../img/bg_play.jpg");
+    height: 901px;
 }
 .br-play .text-wrap {
     height: 86px;
-    background-color: yellow;
     margin: 0 auto;
 }
 .br-play .title {
     font-family: 'Nerko One', cursive;
-    font-size: 40px;
+    font-size: 60px;
     color: var(--brown-color-2);
 }
 
@@ -204,68 +204,50 @@
     height: 400px;
     justify-content: center;
     align-items: center;
+    /* 간격 왜 안먹히는 */
+    gap: 20px;
 }
-.br-play .play-1{
-    width: 250px;
-    height: 350px;
-    border-radius: 200px;
-}
-.br-play .play-1 .item-textWrap{
-    position: relative;
-}
-.br-play .play-1 .item-title{
-    font-size: 25px;
-    font-weight: 900;
-    color: brown;
-}
-.br-play .play-1 .item-p{
-    font-size: 9px;
-    color: black;
+.play-item a img {
+    transition: 0.3s;
 }
 
-.br-play .play-1 .text-link{
-    font-size: 13px;
-    font-weight: 900;
-    color: brown;
-}
-.br-play .play-1 .text-link::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -7px;
-    height: 1px;
-    width: 65%;
-    background-color: brown;
-    transform: translateX(-50%);
-}
-.br-play .play-1 .play-1-cen .desc-1{
-    font-size : 11px;
-    font-weight: 500;
-    color : brown;
-}
-.br-play .play-1 .play-1-cen .desc-2 {
-    font-size: 8px;
-    font-weight: 500;
-    color: brown;
-}
-.br-play .play-1 .play-1-bt {
-    background-color: brown;
-    height: 40%;
-    border-radius: 0 0 200px 200px;
+.play-item a:hover img {
+    opacity: 0.8;
+    transform: scale(1.1);
 }
 
 
-.br-play .play-2 {
-    width: 250px;
-    height: 350px;
-    border-radius: 200px;
-}
-/* be-better */
+
+/*  ---------------------------------- be-better */
 .be-better {
-    background-color: pink;
+    background-color: #F4E8DF;
     height: 960.48px;
 }
+.item-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 0; /* 상자 사이의 간격 */
+    justify-content: center;
+    align-items: center;
+}
 
+.item-box {
+    display: flex;
+    align-items: center; /* 텍스트 가운데 */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.item-box img {
+    width: 50%;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+
+/* ---------------------------------------- */
 /* benefit */
 .benefit {
     background-color: white;
