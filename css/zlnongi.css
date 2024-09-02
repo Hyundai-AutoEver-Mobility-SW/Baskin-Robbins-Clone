@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+:root{
+    --main-color-1: #eee;
+    --font-family-ko: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-en: Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-family-scoop: "Scoop", Sandoll GothicNeo1 TTF, -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+    --font-weight-sd-regular: 400;
+    --font-weight-sd-medium: 500;
+    --font-weight-sd-semibold: 600;
+    --font-weight-sd-bold: 600;
+    --font-weight-sd-extrabold: 600;
+    --font-weight-sd-heavy: 700;
+    --pink-color-1: #ffb3c3;
+    --pink-color-2: #ff4d72;
+    --pink-color-3: #ff7c98;
+    --brown-color-1: #41332c;
+    --brown-color-2: #2f231c;
+    --brown-color-3: #948780;
+    --gray-color-1: #d4d4d4;
+    --swiper-theme-color: #007aff;
+}
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+a:link, a:visited{text-decoration: none;}
+ul,li{list-style: none; }
+
+/* header */
+.hd{
+    background-color: red;
+    height: 90px;
+}
+
+
+/* banner */
+.banner{
+    background-color: pink;
+    height: 910px;
+}
+
+/* promotion */
+.promotion{
+    background-color: white;
+    height: 860.28px;
+}
+/* new-item */
+.new-item{
+    background-color: pink;
+    height: 949.09px;
+}
+/* br-play */
+.br-play{
+    background-color: white;
+    height: 949.09px;
+}
+/* be-better */
+.be-better{
+    background-color: pink;
+    height: 960.48px;
+}
+/* benefit */
+.benefit{
+    background-color: white;
+    /* height: 960.48px; */
+}
+
+.conTitle{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    color: var(--pink-color-2);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.miniContent {
+    font-size: 14px;
+}
+
+.benefit .item{
+    background-color: white;
+}
+
+/* map */
+.map{
+    /* background-color: pink; */
+    height: 645px;
+    padding: 134px 0 170px;
+}
+
+.map-container {
+    /* background-color: skyblue; */
+    height: 341px;
+
+}
+
+
+
+.map-header{
+    padding: 0 0 0 80px;
+}
+
+.mapTitle {
+    color: #ff5484;
+    font-family: var(--font-family-scoop);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.map-header-description {
+    margin-left: 25px;
+    color: #858585;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 14px;
+}
+
+.map-br-way {
+    margin-left: 134px;
+}
+
+.map-br-way-container {
+    margin-top: -74px;
+}
+/* footer */
+.ft{
+    background-color: #000;
+    height: 593.17px;
+}
+
+.site-footer-policy {
+    border-bottom: 1px solid #333230;
+}
+
+.site-footer-policy-link {
+    padding: 7px;
+    color: #fff;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 12px;
+}
+
+.site-footer-policy-item-point .site-footer-policy-link{
+    color: #fff;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 15px;
+}
+
+.site-footer-policy.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 20px !important;
+}
+
+.site-footer-policy ul {
+    padding-left: 0 !important;
+}
+
+.site-footer-policy ul,li {
+    margin-bottom: 0 !important;
+}
+
+.site-footer-info__text {
+    margin-top: 28px;
+    color: #ffffff3b;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 12px;
+}
+
+.site-footer-info_text {
+    margin-top: 12px;
+    margin-bottom: 0 !important;
+    color: #ffffff3b;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 12px;
+}
+
+.site-footer-info__text1 {
+    margin-top: 40px;
+    color: #ffffff80;
+    font-size: 12px;
+}
+
+.site-footer-menu {
+    color: white;
+    padding-left: 0 !important;
+}
+
+.site-footer-box h4 {
+    color: #fff3;
+    font-family: var(--font-family-en);
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 24px;
+}
+
+.site-footer-box .py-5 {
+    padding-bottom: 0 !important;
+}
+
+.site-footer-box-last .site-footer-button{
+    position: relative;
+    z-index: 10;
+    width: 161px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.site-footer-box-last .site-footer-button img{
+    position: absolute;
+    right: 20px;
+    top: 46%;
+}
