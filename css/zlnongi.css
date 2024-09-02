@@ -21,6 +21,10 @@
     --swiper-theme-color: #007aff;
 }
 
+*{margin: 0;padding: 0; box-sizing: border-box;}
+a:link, a:visited{text-decoration: none;}
+ul,li{list-style: none; }
+
 /* header */
 .hd{
     background-color: red;
@@ -83,9 +87,77 @@
 .map{
     background-color: pink;
     height: 645px;
+    padding: 134px 0 170px;
+}
+
+.map-container {
+    background-color: skyblue;
+    height: 341px;
+
+}
+
+
+
+.map-header{
+    padding: 0 0 0 80px;
+}
+
+.mapTitle {
+    color: #ff5484;
+    font-family: var(--font-family-scoop);
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.map-header-description {
+    margin-left: 25px;
+    color: #858585;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 14px;
+}
+
+.map-br-way {
+    margin-left: 134px;
+}
+
+.map-br-way-container {
+    margin-top: -74px;
 }
 /* footer */
 .ft{
-    background-color: black;
+    background-color: #000;
     height: 593.17px;
+}
+
+.site-footer-policy {
+    border-bottom: 1px solid #333230;
+}
+
+.site-footer-policy-link {
+    padding: 7px;
+    color: #fff;
+    font-weight: var(--font-weight-sd-medium);
+    font-size: 12px;
+}
+
+.site-footer-policy-item-point .site-footer-policy-link{
+    color: #fff;
+    font-weight: var(--font-weight-sd-bold);
+    font-size: 15px;
+}
+
+.site-footer-policy.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 20px !important;
+}
+
+.site-footer-policy ul {
+    padding-left: 0 !important;
+}
+
+.site-footer-policy ul,li {
+    margin-bottom: 0 !important;
 }
