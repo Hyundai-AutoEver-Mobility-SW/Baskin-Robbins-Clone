@@ -182,6 +182,7 @@ h1 .logo {
 }
 
 .conTitle{
+    font-family: "Black Han Sans", sans-serif;
     position: relative;
     left: 50%;
     transform: translate(-50%);
