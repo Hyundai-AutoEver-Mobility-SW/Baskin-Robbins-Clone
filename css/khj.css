@@ -69,19 +69,19 @@
 }
 /* ---------------------------------- swiper */
 
-.swiper-slide {
-    flex-shrink: 0; /* 슬라이드가 줄어들지 않도록 설정 */
-}
-
-.swiper-wrapper {
-    display: flex;
+.new-item .swiper {
     width: 100%;
-
-}
-.swiper{
     position: relative;
 }
-.swiper-pagination {
+.new-item .swiper-slide {
+    flex-shrink: 0;
+}
+
+.new-item .swiper-wrapper {
+    display: flex;
+    width: 100%;
+}
+.new-item .swiper-pagination {
     position: absolute;
     text-align: center;
     transition: 0.3s opacity;
@@ -90,8 +90,7 @@
     bottom: -100px;
     width: 100%;
 }
-/* 커스텀 페이지네이션 불릿 */
-.swiper-pagination-bullet {
+.new-item .swiper-pagination-bullet {
     position: relative;
     width: 14px;
     height: 14px;
@@ -100,7 +99,7 @@
     border-radius: 100%;
 }
 
-.swiper-pagination-bullet:before {
+.new-item .swiper-pagination-bullet:before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -113,7 +112,7 @@
     transition: 0.3s;
 }
 
-.swiper-pagination-bullet-active:before {
+.new-item .swiper-pagination-bullet-active:before {
     top: -9px;/* 활성화된 불릿이 커지면서 위치를 조정 */
     left: -6.5px;/* 활성화된 불릿이 커지면서 위치를 조정 */
     width: 27px;
@@ -131,7 +130,6 @@
 }
 .new-item .item-container{
     height: 563px;
-    /* border-radius : 15px; */
 }
 
 .new-item .item-container .left-col{
@@ -183,7 +181,7 @@
 .br-play {
     background-color: gray;
     background-image: url("../img/bg_play.jpg");
-    height: 901px;
+    height: 800px;
 }
 .br-play .text-wrap {
     height: 86px;
@@ -203,49 +201,69 @@
 .br-play .play-container{
     height: 400px;
     justify-content: center;
-    align-items: center;
     /* 간격 왜 안먹히는 */
     gap: 20px;
 }
-.play-item a img {
+.br-play .play-item a img {
     transition: 0.3s;
 }
 
-.play-item a:hover img {
+.br-play .play-item a:hover img {
     opacity: 0.8;
     transform: scale(1.1);
 }
 
 
-
 /*  ---------------------------------- be-better */
 .be-better {
+    padding: 80px 0;
     background-color: #F4E8DF;
-    height: 960.48px;
+    height: 850px;
 }
-.item-container {
+.be-better a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.be-better a:hover {
+    opacity: 0.8;
+}
+.be-better .item-container {
     width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px 0; /* 상자 사이의 간격 */
+    gap: 10px 10px; /* 상자 사이의 간격 */
     justify-content: center;
     align-items: center;
 }
 
-.item-box {
+.be-better .item-box {
     display: flex;
     align-items: center; /* 텍스트 가운데 */
     border-radius: 8px;
     background-color: #f9f9f9;
 }
 
-.item-box img {
+.be-better .item-box img {
     width: 50%;
     margin-right: 15px;
     border-radius: 8px;
 }
 
+.be-better .item-box .text-box {
+    padding-bottom : 70px;
+}
+.be-better .item-box .text-box .text-1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF81AC;
+    margin-bottom : 10px;
+}
+.be-better .item-box .text-box p {
+    font-size: 15px;
+    font-weight: 700;
+}
 
 /* ---------------------------------------- */
 /* benefit */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>배스킨라빈스</title>
+    <link rel="icon" href="./img/favicon.png" />
     <!-- 부트스트랩 css -->
     <link
       rel="stylesheet"
@@ -49,7 +50,7 @@
     <div class="banner"></div>
     <div class="container promotion"></div> -->
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new item -->
-    <!-- <div class="new-item p-5">
+    <div class="new-item p-5">
       <div class="text-wrap-pink text-center mb-5">
         <h1 class="mb-1">NEW ITEM</h1>
         <p class="">새로 나온 배라의 신제품을 소개합니다</p>
@@ -167,13 +168,14 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination">123</div>
+        <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
-    </div> -->
-    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ br-play -->
-    <!-- <div class="br-play p-5">
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ br-play  -->
+    <div class="br-play p-5">
       <div class="text-wrap text-center mb-5">
         <h1 class="mb-1 title">BR Play</h1>
         <p class="desc">배라와 함께한 당신의 다양한 의견을 듣습니다</p>
@@ -181,44 +183,50 @@
       <div class="container">
         <div class="play-container d-flex">
           <div class="play-item">
-            <a href="#">
+            <a href="https://www.baskinrobbins.co.kr/play/myflavor/list.php">
               <img src="./img/bg-play-item1.png" alt="" />
             </a>
-            <a href="#">
+            <a href="https://www.baskinrobbins.co.kr/play/plaza/list.php">
               <img src="./img/bg-play-item2.png" alt="" />
             </a>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="be-better">
       <div class="text-wrap-pink text-center mb-4">
         <h1 class="mb-1 title">Be Better</h1>
-        <p class="desc">배라가 사회와 함께 하는 방법, 가치 있는 같ㅣ</p>
+        <p class="desc">배라가 사회와 함께 하는 방법, 가치 있는 같이</p>
       </div>
       <div class="better-container">
-        <div class="item-container">
-          <div class="item-box">
-            <img src="./img/img_farm.png" alt="Image 1" />
-            <div class="text">
-              <div class="text-1">핑크팜 캠페인</div>
-              <p>지역 농가 상생 프로젝트</p>
+        <div class="item-container container">
+          <a href="https://www.baskinrobbins.co.kr/story/be-better.php#farm">
+            <div class="item-box">
+              <img src="./img/img_farm.png" alt="" />
+              <div class="text-box">
+                <div class="text-1">핑크팜 캠페인</div>
+                <p>지역 농가 상생 프로젝트</p>
+              </div>
             </div>
-          </div>
-          <div class="item-box">
-            <img src="./img/img_farm.png" alt="Image 1" />
-            <div class="text">
-              <div class="text-1">핑크팜 캠페인</div>
-              <p>지역 농가 상생 프로젝트</p>
+          </a>
+          <a href="https://www.baskinrobbins.co.kr/story/be-better.php#dream">
+            <div class="item-box">
+              <img src="./img/img_dream.png" alt="" />
+              <div class="text-box">
+                <div class="text-1">핑크팜 캠페인</div>
+                <p>지역 농가 상생 프로젝트</p>
+              </div>
             </div>
-          </div>
-          <div class="item-box">
-            <img src="./img/img_farm.png" alt="Image 1" />
-            <div class="text">
-              <div class="text-1">핑크팜 캠페인</div>
-              <p>지역 농가 상생 프로젝트</p>
+          </a>
+          <a href="https://www.baskinrobbins.co.kr/story/be-better.php#link">
+            <div class="item-box">
+              <img src="./img/img_link.png" alt="" />
+              <div class="text-box">
+                <div class="text-1">핑크팜 캠페인</div>
+                <p>지역 농가 상생 프로젝트</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -245,6 +253,11 @@
       const swiper = new Swiper(".swiper", {
         loop: true,
         slidesPerView: 1,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
