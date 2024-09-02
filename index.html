@@ -1,54 +1,35 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>배스킨라빈스</title>
-    <link rel="icon" href="./img/favicon.png" />
-    <!-- 부트스트랩 css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- swiper -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
-      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/khj.css" />
-    <link rel="stylesheet" href="./css/yeon-dong.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배스킨라빈스</title>
+  <!-- 부트스트랩 css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Noto Sans Korean -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="./css/yeon-dong.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-  <body>
-    <header class="hd fixed-top">
+<body>
+  <header class="hd fixed-top">
     <div class="container d-flex justify-content-between">
       <div class="left-wrap d-flex">
         <h1>
@@ -82,7 +63,92 @@
       </div>
     </div>
   </div>
-
+<!-- 프로모션 -->
+  <div class="promotion d-flex align-items-center">
+    <div class="container">
+      <h1 class="text-center conTitle mb-2">Promotion</h1>
+      <p class="text-center miniContent mb-5">배라의 다양한 혜택과 이벤트를 만나보세요</p>
+      <!-- owl -->
+      <div class="owl-carousel owl-theme">
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/1f2b02a61af720e995ed1e5b6a2eeebd.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2023-09-04 ~ 소진 시 까지</div>
+            <div class="info-text">아이스크림 스쿱퍼, 해피앱 스캔시 3천원 OFF!</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/3b3c369d399b99f31e5fe1e7593a58a5.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-07 ~ 소진 시 까지</div>
+            <div class="info-text">쿼터 이상 구매 시 폴더블 선풍기 5,900원</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/4ac199463327b1eb0c3f4fab7eaddc5d.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-23 ~ 소진 시 까지</div>
+            <div class="info-text">파인트 이상 구매 시 빵빵이 인형키링 6,900원</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/5f9965e0d6727202df3e919df7b3ab51.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-30 ~ 2024-09-05</div>
+            <div class="info-text">쿼터 이상 예약 시, 우석이 포토카드 SET 100원!</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/6e266ad89b4d3e763efaa446dd21d2d4.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-14 ~ 소진 시 까지</div>
+            <div class="info-text">파인트 이상 구매 시 배라 선글라스 900원</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/699a5486be28dcafee8f555338954174.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-09-01 ~ 2024-09-03</div>
+            <div class="info-text">매월 1,2,3일 새로운 맛을 만나보세요! 배라데이</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/1635ff0441370eedd4d78faac649bbb3.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-07-03 ~ 소진 시 까지</div>
+            <div class="info-text">모슈 텀블러 머그 MD 구매 시 배라 3종 쿠폰 증정</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/71817c0bf7dc2ef6e4730f3930525280.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-30 ~ 2024-09-30</div>
+            <div class="info-text">우석이 등신대 인증샷 EVENT</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/aa79a85c6647d5110877c416b7d1f04a.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-08-29 ~ 2024-09-04</div>
+            <div class="info-text">2024 Run your way 참가권 응모 이벤트</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/b222cb1d69b5a50653b7da35dad50161.jpg" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">2024-07-05 ~ 소진 시 까지</div>
+            <div class="info-text">아이스크림 보냉 컨테이너 매장판매 시작!</div>
+          </div>
+        </div>
+        <div class="item rounded">
+          <div class="sliderView d-flex gap-3 p-3 flex-column">
+            <img src="./image/090b435e703e9afa05a0b00ad00a7b07.png" alt="" class="img-fluid top-rounded" style="width: 350px;">
+            <div class="date-info-text">상시 운영</div>
+            <div class="info-text">워크샵 by 배스킨라빈스 그랜드 오픈</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
     <div class="container promotion"></div>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new item -->
@@ -301,6 +367,36 @@
       }
     })
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        200: {
+          items: 2,
+        },
+        400: {
+          items: 5,
+        },
+      }
+    })
+
+  });
+
+
+
+</script>
+</body>
     <script>
       const swiper = new Swiper(".swiper", {
         autoplay: {
