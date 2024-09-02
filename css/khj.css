@@ -22,6 +22,9 @@
     --swiper-theme-color: #007aff;
 }
 /* common */
+.container{
+    min-width: 1500px;
+}
 .text-wrap-pink {
     height: 86px;
     margin: 0 auto;
@@ -40,12 +43,12 @@
 .img-container {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
 .img-container img {
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
@@ -127,6 +130,7 @@
 .new-item {
     background-color: #FFE4EA;
     height: 949.09px;
+    overflow: hidden;
 }
 .new-item .item-container{
     height: 563px;
