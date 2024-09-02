@@ -52,7 +52,6 @@
 }
 /* header */
 .hd {
-    background-color: red;
     height: 90px;
 }
 
@@ -74,6 +73,7 @@
     position: relative;
 }
 .new-item .swiper-slide {
+    width: 100%;
     flex-shrink: 0;
 }
 
