@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+:root {
+    --main-color-1: #eee;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    --font-weight-sd-regular: 400;
+    --font-weight-sd-medium: 500;
+    --font-weight-sd-semibold: 600;
+    --font-weight-sd-bold: 600;
+    --font-weight-sd-extrabold: 600;
+    --font-weight-sd-heavy: 700;
+    --pink-color-1: #ffb3c3;
+    --pink-color-2: #ff4d72;
+    --pink-color-3: #ff7c98;
+    --brown-color-1: #41332c;
+    --brown-color-2: #2f231c;
+    --brown-color-3: #948780;
+    --gray-color-1: #d4d4d4;
+    --swiper-theme-color: #007aff;
+}
+/* common */
+.text-wrap-pink {
+    height: 86px;
+    margin: 0 auto;
+}
+
+.text-wrap-pink h1 {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--pink-color-2);
+}
+
+.text-wrap-pink p {
+    font-size: 13px;
+    color: #777;
+}
+.img-container {
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.img-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+/* header */
+.hd {
+    height: 90px;
+}
+
+/* banner */
+.banner {
+    background-color: pink;
+    height: 910px;
+}
+
+/* promotion */
+.promotion {
+    background-color: white;
+    height: 860.28px;
+}
+/* ---------------------------------- swiper */
+
+.new-item .swiper {
+    width: 100%;
+    position: relative;
+}
+.new-item .swiper-slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.new-item .swiper-wrapper {
+    display: flex;
+    width: 100%;
+}
+.new-item .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    bottom: -100px;
+    width: 100%;
+}
+.new-item .swiper-pagination-bullet {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin: 0 20px; /* 불릿 사이의 간격 */
+    background: transparent;
+    border-radius: 100%;
+}
+
+.new-item .swiper-pagination-bullet:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    margin: -7px 0 0 -7px;
+    border-radius: 100%;
+    content: "";
+    background: #EEC5D0;
+    transition: 0.3s;
+}
+
+.new-item .swiper-pagination-bullet-active:before {
+    top: -9px;/* 활성화된 불릿이 커지면서 위치를 조정 */
+    left: -6.5px;/* 활성화된 불릿이 커지면서 위치를 조정 */
+    width: 27px;
+    height: 32px;
+    margin: 0;
+    border-radius: 0;
+    background: url("../img/icon_bullet_active.png") no-repeat center center;
+    background-size: contain;
+}
+
+/* ---------------------------------- new-item */
+.new-item {
+    background-color: #FFE4EA;
+    height: 949.09px;
+    overflow: hidden;
+}
+.new-item .item-container{
+    height: 563px;
+}
+
+.new-item .item-container .left-col{
+    border-radius: 15px;
+    position: relative;
+}
+
+    
+.new-item .item-container .right-col {
+    border-radius: 15px;
+    display : flex;
+    flex-direction: column;
+}
+.new-item .item-container .right-col .row-1,
+.new-item .item-container .right-col .row-2 {
+    display: flex;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    /* 비율로 안됨? */
+    height: 285px; 
+    position: relative;
+}
+.new-item .item-container .text{
+    position: absolute;
+    color : #E77E32;
+    left: 50%;
+    top: 0%;
+    margin: 30px;
+    font-weight: 700;
+    font-size : 15px;
+}
+.new-item .item-container .arrow-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #E77E32;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom : 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------- br-play */
+.br-play {
+    background-color: gray;
+    background-image: url("../img/bg_play.jpg");
+    height: 800px;
+}
+.br-play .text-wrap {
+    height: 86px;
+    margin: 0 auto;
+}
+.br-play .title {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--brown-color-2);
+}
+
+.br-play .desc {
+    font-size: 13px;
+    color: var(--brown-color-2);
+}
+
+.br-play .play-container{
+    height: 400px;
+    justify-content: center;
+    /* 간격 왜 안먹히는 */
+    gap: 20px;
+}
+.br-play .play-item a img {
+    transition: 0.3s;
+}
+
+.br-play .play-item a:hover img {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+
+/*  ---------------------------------- be-better */
+.be-better {
+    padding: 80px 0;
+    background-color: #F4E8DF;
+    height: 850px;
+}
+.be-better a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.be-better a:hover {
+    opacity: 0.8;
+}
+.be-better .item-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 10px; /* 상자 사이의 간격 */
+    justify-content: center;
+    align-items: center;
+}
+
+.be-better .item-box {
+    display: flex;
+    align-items: center; /* 텍스트 가운데 */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.be-better .item-box img {
+    width: 50%;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+.be-better .item-box .text-box {
+    padding-bottom : 70px;
+}
+.be-better .item-box .text-box .text-1 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #FF81AC;
+    margin-bottom : 10px;
+}
+.be-better .item-box .text-box p {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ---------------------------------------- */
+/* benefit */
+.benefit {
+    background-color: white;
+    height: 960.48px;
+}
+
+/* map */
+.map {
+    background-color: pink;
+    height: 645px;
+}
+
+/* footer */
+.ft {
+    background-color: black;
+    height: 593.17px;
+}
