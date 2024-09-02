@@ -28,8 +28,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css -->
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/khj.css" />
+    <link rel="stylesheet" href="./css/yeon-dong.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,9 +48,43 @@
   </head>
 
   <body>
-    <!-- <header class="hd"></header>
-    <div class="banner"></div>
-    <div class="container promotion"></div> -->
+    <header class="hd fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="left-wrap d-flex">
+        <h1>
+          <div class="logo"></div>
+        </h1>
+        <ul class="menu d-flex justify-content-center align-items-center">
+          <li class="menu-item"><a href="#!">Menu</a></li>
+          <li class="menu-item"><a href="#!">BR Play</a></li>
+          <li class="menu-item"><a href="#!">BR Story</a></li>
+          <li class="menu-item"><a href="#!">Delivery/Store</a></li>
+        </ul>
+      </div>
+      <div class="right-wrap d-flex justify-content-center align-items-center">
+        <div class="search d-flex justify-content-end">
+          <div class="search-img"></div>
+        </div>
+        <div class="user-icon"></div>
+      </div>
+    </div>
+  </header>
+  <div class="background-image">
+    <div class="d-flex justify-content-center">
+      <div class="main-banner"></div>
+      <div class="frame-img-box"></div>
+      <div class="img-menu-list">
+        <ul>
+          <li><img src="./image/2866954a722d111efacbdf6ac46c4849.png" alt=""></li>
+          <li><img src="./image/4347e27ebe4e2ff20bbcec09aaa0ead4.png" alt=""></li>
+          <li><img src="./image/17880797694bb7d5182a4885a49c02f5.png" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+    <div class="container promotion"></div>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new item -->
     <div class="new-item p-5">
       <div class="text-wrap-pink text-center mb-5">
@@ -242,6 +278,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- jquery -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- swiper -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.js"
@@ -249,6 +289,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- header -->
+    <script>
+    $(window).scroll(function () {
+      let scroll = $(window).scrollTop()
+      console.log(scroll);
+      if (scroll < 100) {
+        $(".hd").removeClass("hover");
+      } else {
+        $(".hd").addClass("hover");
+      }
+    })
+  </script>
     <script>
       const swiper = new Swiper(".swiper", {
         autoplay: {
