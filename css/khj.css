@@ -38,19 +38,6 @@
     font-size: 13px;
     color: #777;
 }
-.img-container {
-    height: 100%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-.img-container img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px;
-}
 /* ---------------------------------- swiper */
 
 .new-item .swiper {
@@ -67,7 +54,6 @@
     width: 100%;
 }
 .new-item .swiper-pagination {
-    position: absolute;
     text-align: center;
     transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
@@ -111,56 +97,66 @@
 /* ---------------------------------- new-item */
 .new-item {
     background-color: #FFE4EA;
-    height: 949.09px;
+    height: auto;
     overflow: hidden;
 }
 .new-item .item-container{
     height: 563px;
 }
-
-.new-item .item-container .left-col{
+.product-main img{
     border-radius: 15px;
-    position: relative;
 }
 
-    
-.new-item .item-container .right-col {
-    border-radius: 15px;
-    display : flex;
-    flex-direction: column;
-}
-.new-item .item-container .right-col .row-1,
-.new-item .item-container .right-col .row-2 {
-    display: flex;
-    margin: 10px 0;
+.product-secondary {
     background-color: white;
-    border-radius: 10px;
-    height: auto; 
+    border-radius: 15px;
     position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 400px; 
+    min-width: 250px;
+    flex-grow: 1;
 }
-.new-item .item-container .text{
-    position: absolute;
-    color : #E77E32;
-    left: 50%;
-    top: 0%;
-    margin: 30px;
-    font-weight: 700;
-    font-size : 15px;
+
+.product-secondary img {
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
 }
-.new-item .item-container .arrow-btn {
-    width: 15%;
-    height: 20%;
-    background-color: #E77E32;
+
+.product-secondary p {
+    color: #FF7A33;
+    font-weight: bold;
+}
+
+.arrow-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #FF7A33;
     border-radius: 50%;
     position: absolute;
-    right: 10px;
-    bottom : 10px;
-    margin: 20px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.arrow-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Adjust spacing and layout for smaller screens */
+@media (max-width: 768px) {
+    .product-main {
+        text-align: center;
+    }
+
+    .product-secondary {
+        margin-bottom: 20px;
+    }
+}
 
 /* ---------------------------------- br-play */
 .br-play {
@@ -204,52 +200,40 @@
 .be-better {
     padding: 80px 0;
     background-color: #F4E8DF;
-    height: 850px;
+    height: auto;
 }
-.be-better a{
-    text-decoration: none;
-    color: black;
-    transition: 0.3s;
-}
-.be-better a:hover {
-    opacity: 0.8;
-}
-.be-better .item-container {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px 10px; /* 상자 사이의 간격 */
-    justify-content: center;
-    align-items: center;
-}
-
-.be-better .item-box {
-    display: flex;
-    align-items: center; /* 텍스트 가운데 */
-    border-radius: 8px;
+.better-container .item-box {
     background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.be-better .item-box img {
+.better-container .item-box:hover {
+    transform: translateY(-5px);
+}
+
+.better-container .item-box img {
     width: 50%;
-    height: 100%;
+    height: auto;
     margin-right: 15px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
-.be-better .item-box .text-box {
-    padding-bottom : 70px;
+.better-container .text-box {
+    flex: 1;
 }
-.be-better .item-box .text-box .text-1 {
-    font-size: 25px;
+
+.better-container .text-box .text-1 {
+    font-size: 20px;
     font-weight: 700;
     color: #FF81AC;
-    margin-bottom : 10px;
-}
-.be-better .item-box .text-box p {
-    font-size: 15px;
-    font-weight: 700;
+    margin-bottom: 10px;
 }
 
+.better-container .text-box p {
+    font-size: 14px;
+    font-weight: 600;
+}
 /* ---------------------------------------- */
