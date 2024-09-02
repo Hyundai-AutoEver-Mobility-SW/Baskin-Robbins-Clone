@@ -135,8 +135,7 @@
     margin: 10px 0;
     background-color: white;
     border-radius: 10px;
-    /* 비율로 안됨? */
-    height: 285px; 
+    height: auto; 
     position: relative;
 }
 .new-item .item-container .text{
@@ -149,13 +148,13 @@
     font-size : 15px;
 }
 .new-item .item-container .arrow-btn {
-    width: 60px;
-    height: 60px;
+    width: 15%;
+    height: 20%;
     background-color: #E77E32;
     border-radius: 50%;
     position: absolute;
-    right: 0;
-    bottom : 0;
+    right: 10px;
+    bottom : 10px;
     margin: 20px;
     display: flex;
     justify-content: center;
@@ -167,10 +166,11 @@
 .br-play {
     background-color: gray;
     background-image: url("../img/bg_play.jpg");
-    height: 800px;
+    height: auto;
+        /* 자동 높이 조정 */
+        padding: 40px 0;
 }
 .br-play .text-wrap {
-    height: 86px;
     margin: 0 auto;
 }
 .br-play .title {
@@ -186,7 +186,6 @@
 }
 
 .br-play .play-container{
-    height: 400px;
     justify-content: center;
     /* 간격 왜 안먹히는 */
     gap: 20px;
@@ -234,6 +233,7 @@
 
 .be-better .item-box img {
     width: 50%;
+    height: 100%;
     margin-right: 15px;
     border-radius: 8px;
 }

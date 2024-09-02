@@ -171,7 +171,7 @@
     </div>
   </div>
   <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ new item -->
-  <div class="new-item p-5">
+ <div class="new-item p-5">
     <div class="text-wrap-pink text-center mb-5">
       <h1 class="mb-3">NEW ITEM</h1>
       <p class="">새로 나온 배라의 신제품을 소개합니다</p>
@@ -186,7 +186,7 @@
                   <img src="./img/item1-main.png" alt="" />
                 </div>
               </div>
-              <div class="right-col col-md-4">
+              <div class="right-col col-md-4 d-none d-md-flex"> <!-- Hide on small screens -->
                 <div class="col">
                   <div class="row-1">
                     <div class="img-container">
@@ -208,7 +208,7 @@
                   </div>
                 </div>
               </div>
-              <div class="right-col col-md-4">
+              <div class="right-col col-md-4 d-none d-md-flex"> <!-- Hide on small screens -->
                 <div class="col">
                   <div class="row-1">
                     <div class="img-container">
@@ -241,7 +241,7 @@
                   <img src="./img/item1-main.png" alt="" />
                 </div>
               </div>
-              <div class="right-col col-md-4">
+              <div class="right-col col-md-4 d-none d-md-flex"> <!-- Hide on small screens -->
                 <div class="col">
                   <div class="row-1">
                     <div class="img-container">
@@ -263,7 +263,7 @@
                   </div>
                 </div>
               </div>
-              <div class="right-col col-md-4">
+              <div class="right-col col-md-4 d-none d-md-flex"> <!-- Hide on small screens -->
                 <div class="col">
                   <div class="row-1">
                     <div class="img-container">
@@ -293,27 +293,32 @@
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-  </div>
+</div>
+
 
   <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ br-play  -->
   <div class="br-play p-5">
     <div class="text-wrap text-center mb-5">
-      <h1 class="mb-3 title">BR Play</h1>
-      <p class="desc">배라와 함께한 당신의 다양한 의견을 듣습니다</p>
+        <h1 class="mb-3 title">BR Play</h1>
+        <p class="desc">배라와 함께한 당신의 다양한 의견을 듣습니다</p>
     </div>
     <div class="container">
-      <div class="play-container d-flex">
-        <div class="play-item">
-          <a href="https://www.baskinrobbins.co.kr/play/myflavor/list.php">
-            <img src="./img/bg-play-item1.png" alt="" />
-          </a>
-          <a href="https://www.baskinrobbins.co.kr/play/plaza/list.php">
-            <img src="./img/bg-play-item2.png" alt="" />
-          </a>
+        <div class="play-container row justify-content-center">
+            <div class="play-item col-6 col-md-4 mb-3"> <!-- 부트스트랩의 col 클래스를 사용 -->
+                <a href="https://www.baskinrobbins.co.kr/play/myflavor/list.php">
+                    <img src="./img/bg-play-item1.png" alt="" class="img-fluid" /> <!-- img-fluid 클래스를 추가하여 반응형 이미지 -->
+                </a>
+            </div>
+            <div class="play-item col-6 col-md-4 mb-3">
+                <a href="https://www.baskinrobbins.co.kr/play/plaza/list.php">
+                    <img src="./img/bg-play-item2.png" alt="" class="img-fluid" />
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
+  <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ be-better  -->
   <div class="be-better">
     <div class="text-wrap-pink text-center mb-4">
       <h1 class="mb-3 title">Be Better</h1>
