@@ -22,9 +22,6 @@
     --swiper-theme-color: #007aff;
 }
 /* common */
-.container{
-    min-width: 1500px;
-}
 .text-wrap-pink {
     height: 86px;
     margin: 0 auto;
