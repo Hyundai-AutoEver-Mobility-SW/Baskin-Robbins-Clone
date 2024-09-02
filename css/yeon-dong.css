@@ -173,3 +173,42 @@ h1 .logo {
     margin-bottom: 18px;
     cursor: pointer;
 }
+
+/* promotion */
+.promotion{
+    background-color: white;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.conTitle{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-block;
+    color: var(--pink-color-2);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.miniContent {
+    font-size: 14px;
+    color: #858585;
+}
+
+.top-rounded{
+    border-radius: 100% 100% 0 0;
+}
+
+.date-info-text{
+    color: #d9bb97;
+    font-size: 12px;
+}
+
+.info-text{
+    margin-top: 6px;
+    padding-top: 10px;
+    border-top: 2px solid #f0e7d9;
+    color: #666;
+    font-size: 14px;
+}
