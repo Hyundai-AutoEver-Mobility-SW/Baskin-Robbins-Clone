@@ -43,7 +43,7 @@
 
 .mapTitle {
     color: #ff5484;
-    font-family: var(--font-family-scoop);
+    font-family: "Black Han Sans", sans-serif;
     font-weight: 700;
     font-size: 50px;
     text-align: center;
@@ -52,6 +52,7 @@
 
 
 .map-header-description {
+    font-family: "Noto Sans KR", sans-serif;
     margin-left: 25px;
     color: #858585;
     font-weight: var(--font-weight-sd-medium);
@@ -67,6 +68,7 @@
 }
 /* footer */
 .ft{
+    font-family: "Noto Sans KR", sans-serif;
     background-color: #000;
     height: 593.17px;
 }
