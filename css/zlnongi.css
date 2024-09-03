@@ -31,7 +31,7 @@
 
 .map-container {
   /* background-color: skyblue; */
-  height: 341px;
+  height: auto;
 }
 
 .map-header {
