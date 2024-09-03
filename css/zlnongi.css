@@ -25,13 +25,37 @@
 /* map */
 .map {
   /* background-color: pink; */
-  height: auto;
+  height: 645px;
   padding: 134px 0 170px;
 }
 
 .map-container {
   /* background-color: skyblue; */
   height: 341px;
+}
+
+@media screen and (max-width: 1350px) {
+  .map {
+    height: 100%;
+    padding: 134px 0 170px;
+  }
+  .map-box-container {
+    flex-direction: column;
+  }
+  .map-container {
+    /* background-color: skyblue; */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-store {
+    margin-bottom: 40px;
+    align-items: center;
+  }
+  .map-br-way {
+    margin-left: 70px !important;
+  }
 }
 
 .map-header {
@@ -56,7 +80,7 @@
 }
 
 .map-br-way {
-  /* margin-left: 134px; */
+  margin-left: 134px;
 }
 
 .map-br-way-container {
